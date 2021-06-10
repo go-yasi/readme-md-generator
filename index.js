@@ -2,6 +2,46 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+
+inquirer
+  .prompt([
+    {
+        type: 'input',
+        name: 'filename',
+        message: 'What would you like to name this file?',        
+      },
+      {
+        type: 'input',
+        name: 'filename',
+        message: 'What would you like to name this file?',   
+      },
+      {
+        type: 'input',
+        name: 'filename',
+        message: 'What would you like to name this file?',   
+      },
+      {
+        type: 'input',
+        name: 'filename',
+        message: 'What would you like to name this file?',   
+      },
+      {
+        type: 'input',
+        name: 'filename',
+        message: 'What would you like to name this file?',   
+      },
+  ])
+  .then((answers) => {
+    // Use user feedback for... whatever!!
+  })
+  .catch((error) => {
+    if (error.isTtyError) {
+      // Prompt couldn't be rendered in the current environment
+    } else {
+      // Something else went wrong
+    }
+  });
+
 // TODO: Create an array of questions for user input
 const questions = [];
 
