@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/go-yasi/readme-md-generator/issues"
   },
-  "homepage": "https://github.com/go-yasi/readme-md-generator#readme"
+  "homepage": "https://github.com/go-yasi/readme-md-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.1.0"
+  }
 }
