@@ -2,22 +2,41 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+const writeFile = (answers) => 
+    `# ${answers.title}
+## Description
+${answers.description}
+
+## Table of Contents 
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+${answers.installation}
+
+## Usage
+[Here](${answers.usage}) is a link to the application's GitHub repository.  
+
+## License
+This file uses the [${answers.license}](https://choosealicense.com/).
+
+## Contributing
+This application was developed by Yasi Moshtael.
+
+## Tests
+[Here](${answers.test}) is a link to a video walkthrough demonstrating the application's functionality. 
+
+## Questions
+[GitHub Profile](https://github.com/${answers.github}/)  
+For additional questions, you can reach me via email at ${answers.email}.`
 
 
-//   .then((answers) => {
-//     // Use user feedback for... whatever!!
-//   })
-//   .catch((error) => {
-//     if (error.isTtyError) {
-//       // Prompt couldn"t be rendered in the current environment
-//     } else {
-//       // Something else went wrong
-//     }
-//   });
-
-// TODO: Create an array of questions for user input
-const questions = () => {
-    return inquirer.prompt([
+inquirer
+    .prompt([
         {
             type: "input",
             name: "title",
@@ -64,19 +83,12 @@ const questions = () => {
             message: "What is your email address?",   
         },
     ])
-};
+    .then((answers) => {
+        const readMeContent = writeFile(answers);
 
-console.log(questions);
+        fs.writeFile("README.md", readMeContent, (err) =>
+        err ? console.log(err) : console.log("Your README is ready!")
+        );
+    });
 
-// fs.writeFile("README.md", (error, data) =>
-//     error ? console.error(error) : console.log(data)
-// );
 
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
