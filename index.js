@@ -4,6 +4,7 @@ const fs = require("fs");
 
 const writeFile = (answers) => 
     `# ${answers.title}
+![GitHub license](https://img.shields.io/badge/license-${answers.license}-blue.svg)  
 ## Description
 ${answers.description}
 
@@ -20,19 +21,20 @@ ${answers.installation}
 
 ## Usage
 [Here](${answers.usage}) is a link to the application's GitHub repository.  
+[Here](${answers.video}) is a link to a video walkthrough demonstrating the application's functionality. 
 
 ## License
-This file uses the [${answers.license}](https://choosealicense.com/).
+This application is covered under the ${answers.license} license.  
 
 ## Contributing
-This application was developed by ${answers.contributer}.
+${answers.contributing}.
 
 ## Tests
-[Here](${answers.test}) is a link to a video walkthrough demonstrating the application's functionality. 
+This application was tested using the command "${answers.test}"
 
 ## Questions
 For more information, please visit my [GitHub Profile](https://github.com/${answers.github}/).  
-For additional questions, you can email me at ${answers.email}.`
+For additional questions, please email me at ${answers.email}.`
 
 
 inquirer
@@ -59,18 +61,24 @@ inquirer
         },
         {
             type: "input",
-            name: "contributer",
-            message: "What is your name? ",   
-        },
-        {
-            type: "input",
-            name: "test",
+            name: "video",
             message: "Please provide a link to a video walkthrough demonstrating the application's functionality: ",   
         },
         {
             type: "input",
+            name: "contributing",
+            message: "What guidelines would you like to offer for future contributions?",   
+        },
+        {
+            type: "input",
+            name: "test",
+            message: "How did you test this application?",   
+        },
+        {
+            type: "list",
             name: "license",
-            message: "Choose a license for your application from the following list of options: ",   
+            message: "Choose a license for your application from the following list of options: ", 
+            choices: ["MIT", "GNU GPLv3", "ISC"],  
         },
         {
             type: "input",
@@ -87,7 +95,7 @@ inquirer
         const readMeContent = writeFile(answers);
 
         fs.writeFile("README.md", readMeContent, (err) =>
-        err ? console.log(err) : console.log("Congratulations! Your professional README has been generated!")
+        err ? console.log(err) : console.log("Congratulations! Your professional README file has been generated!")
         );
     });
 
