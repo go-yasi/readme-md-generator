@@ -25,14 +25,14 @@ ${answers.installation}
 This file uses the [${answers.license}](https://choosealicense.com/).
 
 ## Contributing
-This application was developed by Yasi Moshtael.
+This application was developed by ${answers.contributer}.
 
 ## Tests
 [Here](${answers.test}) is a link to a video walkthrough demonstrating the application's functionality. 
 
 ## Questions
-[GitHub Profile](https://github.com/${answers.github}/)  
-For additional questions, you can reach me via email at ${answers.email}.`
+For more information, please visit my [GitHub Profile](https://github.com/${answers.github}/).  
+For additional questions, you can email me at ${answers.email}.`
 
 
 inquirer
@@ -59,8 +59,8 @@ inquirer
         },
         {
             type: "input",
-            name: "contribution",
-            message: "List your collaborators, if any, with links to their GitHub profiles: ",   
+            name: "contributer",
+            message: "What is your name? ",   
         },
         {
             type: "input",
@@ -87,7 +87,7 @@ inquirer
         const readMeContent = writeFile(answers);
 
         fs.writeFile("README.md", readMeContent, (err) =>
-        err ? console.log(err) : console.log("Your README is ready!")
+        err ? console.log(err) : console.log("Congratulations! Your professional README has been generated!")
         );
     });
 

@@ -1,6 +1,6 @@
-# alksjd
+# Professional README Generator
 ## Description
-lkasjdf
+The application is designed to generate a README file from user ansers to prompts
 
 ## Table of Contents 
 - [Installation](#installation)
@@ -11,20 +11,20 @@ lkasjdf
 - [Questions](#questions)
 
 ## Installation
-kajsdf
+Install npm iquirer, write the functions, run in terminal
 
 ## Usage
-[Here](kajdf) is a link to the application's GitHub repository.  
+[Here](https://github.com/go-yasi/readme-md-generator) is a link to the application's GitHub repository.  
 
 ## License
-This file uses the [kjahdf](https://choosealicense.com/).
+This file uses the [MIT](https://choosealicense.com/).
 
 ## Contributing
 This application was developed by Yasi Moshtael.
 
 ## Tests
-[Here](kjhadf) is a link to a video walkthrough demonstrating the application's functionality. 
+[Here](google.com) is a link to a video walkthrough demonstrating the application's functionality. 
 
 ## Questions
-[GitHub Profile](https://github.com/lkjahdsf/)  
-For additional questions, you can reach me via email at lkjadhf.
+[GitHub Profile](https://github.com/go-yasi/)  
+For additional questions, you can reach me via email at yasi.com.
