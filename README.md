@@ -1,7 +1,7 @@
 # Professional README Generator
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)  
 ## Description
-The goal of this assignment was to create an application that uses the Inquirer package to dynamically generate a README.md file from a user’s command-line inputs. 
+The goal of this assignment was to create an application that uses the Inquirer package to dynamically generate a README.md file from a user’s command-line inputs. Happily, I was able to get it up and running quite quickly, and even generated this README file using the application!
 
 ## Table of Contents 
 - [Installation](#installation)
@@ -12,7 +12,7 @@ The goal of this assignment was to create an application that uses the Inquirer 
 - [Questions](#questions)
 
 ## Installation
-First, I installed the Inquirer package by running “npm i inquirer” in my terminal. Next, I included the packages needed to run the application in my JS file using require. Then, I created a sample README file based on the acceptance criteria of the assignment to help me structure the prompts and template literals needed for this application. With the structure defined, I began creating the inquirer prompts.    Once the prompts were complete, I created a template literal that mirrored the structure of the sample README and used the correct formatting for an md file. I stored this to a variable called writeFile. I then used fs to create the new MD file, add the content from my template literal, and console log a message upon execution. 
+First, I installed the Inquirer package by running “npm i inquirer” in my terminal. Next, I included the packages needed to run the application in my JS file using require. Then, I created a sample README file based on the acceptance criteria of the assignment to help me structure the prompts and template literals needed for this application. With the structure defined, I began creating the inquirer prompts. Once the prompts were complete, I created a template literal that mirrored the structure of the sample README and used the correct formatting for an md file. I stored this to a variable called writeFile. I then used fs to create the new MD file, add the content from my template literal, and console log a message upon execution. 
 
 ## Usage
 [Here](https://github.com/go-yasi/readme-md-generator) is a link to the application's GitHub repository.  
