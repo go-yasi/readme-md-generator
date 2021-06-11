@@ -27,10 +27,10 @@ ${answers.installation}
 This application is covered under the ${answers.license} license.  
 
 ## Contributing
-${answers.contributing}.
+${answers.contributing}
 
 ## Tests
-This application was tested using the command "${answers.test}"
+${answers.test}
 
 ## Questions
 For more information, please visit my [GitHub Profile](https://github.com/${answers.github}/).  
