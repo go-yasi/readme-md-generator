@@ -1,7 +1,7 @@
 # Professional README Generator
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)  
 ## Description
-The goal of this assignment was to create an application that uses the Inquirer package to dynamically generate a README.md file from a user’s command-line inputs. Happily, I was able to get it up and running quite quickly, and even generated this README file using the application!
+The goal of this assignment was to create an application that uses the Inquirer package to dynamically generate a README.md file from a user’s command-line inputs. Happily, I was able to get it up and running quite quickly, and am even using it to generate this very README file!
 
 ## Table of Contents 
 - [Installation](#installation)
@@ -16,7 +16,7 @@ First, I installed the Inquirer package by running “npm i inquirer” in my te
 
 ## Usage
 [Here](https://github.com/go-yasi/readme-md-generator) is a link to the application's GitHub repository.  
-[Here](https://www.loom.com/share/e7d262c73bdb4c01a1b8276ac864203a ) is a link to a video walkthrough demonstrating the application's functionality. 
+[Here](https://www.loom.com/share/21d3aca02b3543a7b00f6ac2412da78e) is a link to a video walkthrough demonstrating the application's functionality. 
 
 ## License
 This application is covered under the MIT license.  
@@ -29,4 +29,4 @@ I tested this application by running node index.js in my terminal and answering 
 
 ## Questions
 For more information, please visit my [GitHub Profile](https://github.com/go-yasi/).  
-For additional questions, please email me at uasi.moshtael@gmail.com.
+For additional questions, please email me at yasi.moshtael@gmail.com.
